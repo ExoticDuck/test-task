@@ -1,0 +1,107 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ContentBox {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Index {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.Input {
+    width: 300px;
+    height: 45px;
+    border-radius: 12px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 2px solid #3990eb;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Input:active {
+    border: 2px solid #3990eb;
+    outline: none;
+}
+.Input:focus {
+    border: 2px solid #3990eb;
+    outline: none;
+}
+
+.ButtonBox {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FirstButton {
+    height: 50px;
+    width: 190px;
+    background-color: #cb09e7;
+    border: 0;
+    color: #fff;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: 0 5px #999;
+}
+.FirstButton:active {
+    box-shadow: 0 1px #999;
+    transform: translateY(4px);
+}
+
+.SecondButton {
+    height: 50px;
+    width: 190px;
+    background-color: #48f9cd;
+    border: 0;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: 0 5px #999;
+}
+
+.SecondButton:active {
+    box-shadow: 0 1px #999;
+    transform: translateY(4px);
+}
+
+.FirstButton:disabled {
+    background-color: lightgray;
+}
+
+.SecondButton:disabled {
+    background-color: lightgray;
+}
