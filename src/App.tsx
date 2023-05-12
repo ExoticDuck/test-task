@@ -7,13 +7,13 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-   navigate('/display')
+   navigate('/test-task/display')
   }, [navigate])
 
   return (
     <div className="App">
       <Routes>
-        <Route element={<Display />} path={"/display"}></Route>
+        <Route element={<Display />} path={"/test-task/display"}></Route>
       </Routes>
     </div>
   );
